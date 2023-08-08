@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <title>HTML CODE EDITOR</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+ 
+    <script>
+        function code() {
+      let codeW = document.getElementById("code");
+            var myWindow = window.open("", "","width=600,height=100");
+            myWindow.document.write(codeW.value);
+        }
+        </script>
+    
+</head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    
+
+    <div class="mb-3" style="background-color: #70be6c">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >HTML CODE</label
+      >
+      <textarea
+        class="form-control"
+        id="code"
+        rows="3"
+      ></textarea>
+    </div>
+    <div class="mb-1">
+      <button
+        class="btn btn-primary"
+        
+        onclick="code()"
+      >
+        RUN
+      </button>
+    </div>
+
+    
+  </body>
+</html>
+
+
+
